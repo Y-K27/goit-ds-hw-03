@@ -6,7 +6,7 @@ username = urllib.parse.quote_plus('username')
 password = urllib.parse.quote_plus('password')
 cluster_name = "claster"
 
-url = f"mongodb+srv://{username}:{password}@{cluster_name}.mrx0mbn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+url = f"mongodb+srv://{username}:{password}@{cluster_name}.mrx0mbn.mongodb.net/?retryWrites=true&w=majority&appName={cluster_name}"
 
 client = MongoClient(
     url,
